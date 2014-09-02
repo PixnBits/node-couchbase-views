@@ -1,0 +1,27 @@
+{
+  "name": "couchbase-views",
+  "version": "0.0.1",
+  "description": "install couchbase views from directory/files",
+  "keywords": [
+    "couchbase",
+    "view",
+    "dev",
+    "production",
+    "development"
+  ],
+  "homepage": "https://github.com/PixnBits/node-couchbase-views",
+  "bugs" : {
+    "url": "https://github.com/PixnBits/node-couchbase-views/issues"
+  },
+  "author":{
+    "name": "N Oliver",
+    "email": "i@PixnBits.org"
+  },
+  "main": "index.js",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/PixnBits/node-couchbase-views.git"
+  },
+  "author": "PixnBits",
+  "license": "IDK"
+}
