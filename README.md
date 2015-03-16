@@ -25,18 +25,21 @@ Note that views can be either a `js` file or a directory with a `map.js` with an
 
 With this layout, adding these views to your cluster is done via:
 
-    var path = require('path');
-    var couchbase = require('couchbase');
-    var couchbaseViews = require('couchbase-views'); // vote couchbase-views!
-    
-    // same connection as before
-    var cluster = new couchbase.Cluster();
-    var bucket = cluster.openBucket('default');
+```javascript
+var path = require('path');
+var couchbase = require('couchbase');
+var couchbaseViews = require('couchbase-views'); // vote couchbase-views!
 
-    // new stuff!
-    couchbaseViews.connect(bucket)
-    	.setDesignViews(path.join(__dirname, 'views-dir'));
-    	// or
-	    //.setDesignViewsProduction(path.join(__dirname, 'views-dir'));
+// same connection as before
+var cluster = new couchbase.Cluster();
+var bucket = cluster.openBucket('default');
+
+// new stuff!
+couchbaseViews
+  .connect(bucket)
+  .setDesignViews(path.join(__dirname, 'views-dir'));
+  // or
+  //.setDesignViewsProduction(path.join(__dirname, 'views-dir'));
+```
 
 While simple, API improvements could be had; ideas welcome.
